@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "process_overviewer_api"
+version = "0.1.0"
+description = "api for process overviewer"
+authors = ["DavidSchimmel"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.78.0"
+pymongo = "^4.1.1"
+pandas = "^1.4.2"
+numpy = "^1.22.3"
+pydantic = "^1.9.0"
+yapf = "^0.32.0"
+pytest = "^7.1.2"
+jsonschema = "^4.5.1"
+uvicorn = "^0.17.6"
+mypy = "^0.950"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+start = "process_overviewer_api.main:start"
